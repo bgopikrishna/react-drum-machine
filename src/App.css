@@ -84,20 +84,31 @@ border-radius: 15px;
     background: rgba(0, 0, 0, 0) !important;
     font-weight: bolder; 
 }
-
-.contact {
-    position: fixed;
+.contact-float {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
     bottom: 5%;
     right: 5%;
     z-index: 7;
-   
+    float: right;
+    color: #054364;
 }
-.contact a {
+.contact-float span {
+  display: block;
+}
+.contact {
+    display: block;
+    text-align: center;
+    text-decoration: none;
     color: #054364;
     font-family: monospace;
     text-decoration: none;
+    text-align: center;
+   
 }
-.contact a::after {
+
+.contact::after {
     content: "";
   display: block;
   width: 0;
@@ -107,7 +118,7 @@ border-radius: 15px;
   transition: width 0.3s;
 }
 
-.contact a:hover::after {
+.contact:hover::after {
     width: 100%;
     transition: width 0.3s;
     
