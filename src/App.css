@@ -90,6 +90,7 @@ border-radius: 15px;
     bottom: 5%;
     right: 5%;
     z-index: 7;
+    text-align: center;
    
 }
 .contact a {
@@ -98,7 +99,7 @@ border-radius: 15px;
     text-decoration: none;
     text-align: center;
 }
-.contact a::after {
+.contact .link-effect::after {
     content: "";
   display: block;
   width: 0;
@@ -108,7 +109,7 @@ border-radius: 15px;
   transition: width 0.3s;
 }
 
-.contact a:hover::after {
+.contact .link-effect:hover::after {
     width: 100%;
     transition: width 0.3s;
     

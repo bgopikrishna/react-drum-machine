@@ -88,7 +88,7 @@ class App extends Component {
             <InputSlider
               className={"volume"}
               id={"vol"}
-              value={volume}
+              label={"volume"}
               onChange={this.handleVolume}
             />
 
